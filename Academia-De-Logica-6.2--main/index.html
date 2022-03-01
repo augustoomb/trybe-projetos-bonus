@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Hotel Trybe</title>
+</head>
+<body>
+  <header class="header-trybe">
+    <img src="imagens/Trybe-200x200.jpg" alt="">
+    
+    <h1>Hotel Trybe</h1>
+    
+  </header>
+  <main>
+    <form action="">
+      <section class="hotel-form">
+        <label for="checkin">Checkin</label>
+        <input type="date" name="checkin" id="checkin" class="inputCheckin">
+
+        <label for="checkout">Checkout</label>
+        <input type="date" name="checkout" id="checkout" class="inputCheckout">
+      </section>
+
+      <section class="hotel-form">
+        <input type="radio" name="quartos" id="quarto-comum" value="comum" class="bedroom">
+        <label for="quarto-comum">Quarto Comum</label>
+        
+        <input type="radio" name="quartos" id="quarto-club" value="club" class="bedroom">
+        <label for="quarto-club">Quarto Club</label>
+        
+        <input type="radio" name="quartos" id="quarto-luxo" value="luxo" class="bedroom">
+        <label for="quarto-luxo">Quarto Luxo</label>      
+      </section>
+
+      <section class="hotel-form">
+        <label for="">Pessoas:</label>
+        <select name="pessoas" id="">
+          <option value="1" class="nPessoas" selected>1</option>
+          <option value="2" class="nPessoas">2</option>
+          <option value="3" class="nPessoas">3</option>
+          <option value="4" class="nPessoas">4</option>
+        </select>
+      </section>
+
+      <section class="hotel-form">
+        <label for=""></label>
+        <textarea name="textarea-obs" id="textarea-obs" cols="30" rows="10" placeholder="Observações" class="obs"></textarea>
+      </section>
+
+      <button type="submit" id="submit-btn">Reservar</button>
+
+      <section class="list-section">        
+        <h2>Lista de Reservas</h2>
+        
+        <ol>
+          <!-- INSERIR liS DINAMICAMENTE-->
+        </ol>
+        <button type="reset" id="clear-btn">Limpar</button>
+      </section>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
